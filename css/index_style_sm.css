@@ -1,0 +1,29 @@
+#programs p {
+    margin: auto;
+    text-align: center;
+    width: 100% !important;
+    color: #808080 !important;
+    font-size: 1rem !important;
+}
+
+#teachers p {
+    font-size: 1rem;
+    padding: 20px 0;
+    text-align: center;
+    color: #808080 !important;
+    margin: auto;
+    width: 100%;
+    padding-bottom: 80px;
+}
+
+#Jerome-Jensen p {
+    font-style: italic;
+    font-size: 1rem !important;
+    width: 100% !important;
+    line-height: 25px !important;
+}
+
+#Jerome-Jensen h3 {
+    font-size: 2rem !important;
+    padding: 20px 0;
+}

@@ -1,0 +1,427 @@
+/* --------------------------------------    Global style     ------------------------------------------- */
+
+body {
+    //   height: 1000vh;
+    background-color: #aaa;
+}
+
+.line {
+    background-color: #aaa;
+    height: 1px;
+}
+
+#button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.hide {
+    // opacity: 0;
+    // visibility: hidden;
+    display: none;
+}
+
+.fontbold {
+    font-weight: bold;
+    // transition: font-weight ease 2s;
+}
+
+.fontnormal {
+    font-weight: normal;
+    transition: all ease 2s;
+}
+
+
+/* --------------------------------------    Custom style     ------------------------------------------- */
+
+$btncolor: #7971ea;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* --------------------------------------    Navbar style     ------------------------------------------- */
+
+#navigation {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: rgba(219, 209, 209, 0.644);
+    padding: 20px 0;
+    margin: 0;
+    li {
+        list-style-type: none;
+        padding: 0;
+        a {
+            color: rgba(0, 0, 0, 0.822);
+            font-weight: 700;
+            font-size: 1rem;
+        }
+    }
+}
+
+
+/* --------------------------------------    Home style ( Header )     ------------------------------------------- */
+
+#home {
+    background-image: url("../images/hero_1.jpg");
+    background-size: 100% 100%;
+    // height: 100vh !important;
+    .overlay {
+        background-color: rgba(39, 39, 48, 0.658);
+        height: 100%;
+        color: #fff;
+        .row {
+            // height: 100vh;
+            align-items: center;
+            margin: auto 0;
+            justify-content: space-around;
+            .item>button {
+                border-radius: 25px;
+                padding: 15px 30px;
+                font-size: 0.95rem;
+                font-weight: 700;
+                // background-color:#7971ea
+            }
+            h2 {
+                font-size: 3rem;
+                // font-weight: 800;
+            }
+            .item>p {
+                color: #aaa;
+                padding: 15px 0;
+                font-size: 1.1rem;
+            }
+            .form {
+                p {
+                    color: #000;
+                    font-size: 22px;
+                    font-weight: 600;
+                }
+                input {
+                    padding: 25px 10px !important;
+                }
+                border-radius: 10px;
+                background-color: #fff;
+                padding: 55px 40px;
+                button {
+                    padding: 10px 20px;
+                    border-radius: 30px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+
+/* --------------------------------------    Courses section style     ------------------------------------------- */
+
+#courses {
+    background-color: rgb(248, 239, 239);
+    // padding: 20px 0;
+    h2 {
+        text-align: center;
+        font-size: 3rem;
+        padding: 25px 0;
+    }
+    .owl-carousel {
+        span {
+            font-weight: 900;
+            font-size: 20px;
+        }
+        div.owl-nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            // background-color:  red ;
+            margin-top: 40px;
+        }
+        .prev,
+        .next {
+            font-weight: 500;
+            font-size: 1.6rem;
+            color: #fff;
+            background-color: $btncolor;
+            margin: 20px;
+            // width: 100px;
+            padding: 0 10px!important;
+            line-height: 1.9 !important;
+            border: #aaa 1px dotted;
+        }
+        .card {
+            position: relative;
+            transition: 0.6s all ease;
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 5px 5px 10px 5px #aaa !important;
+            }
+            .card-body {
+                padding: 45px 15px !important;
+            }
+            img {
+                width: 100% !important;
+                height: 200px;
+            }
+            h6 {
+                font-size: 0.9rem;
+                color: #aaa;
+            }
+            h5 {
+                color: #09c;
+                font-weight: 400;
+            }
+            p {
+                color: rgb(179, 144, 144);
+            }
+            span {
+                z-index: 20;
+                position: absolute;
+                top: 170px;
+                right: 0;
+                padding: 10px;
+                font-weight: 400;
+                background-color: $btncolor;
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+/* --------------------------------------   Program section style      ------------------------------------------- */
+
+#programs {
+    padding: 40px 0;
+    background-color: #fff;
+    h2 {
+        text-align: center;
+        padding: 20px 0;
+        font-weight: 700;
+        font-size: 3rem;
+        color: #000;
+    }
+    p {
+        margin: auto;
+        text-align: center;
+        width: 58%;
+        color: #808080 !important;
+        font-size: 1.08rem;
+    }
+    .row {
+        justify-content: space-between;
+        padding: 50px 0;
+        align-items: center;
+        text-align: initial;
+        .right-content {
+            h5 {
+                width: 90%;
+                font-size: 2.2rem;
+                font-weight: 400;
+                color: #000;
+            }
+            p {
+                font-size: 1.1rem;
+                padding: 15px 0;
+                width: 100%;
+                line-height: 35px;
+                text-align: initial;
+                color: #808080 !important;
+            }
+            span {
+                i {
+                    color: $btncolor;
+                    font-size: 1.3rem;
+                    font-weight: 900;
+                }
+                color: #09c;
+                // font-weight: 500;
+                font-size: 1.1rem;
+                display: block;
+                padding: 5px 0;
+            }
+        }
+    }
+}
+
+
+/* --------------------------------------    Teachers section style     ------------------------------------------- */
+
+#teachers {
+    background-color: #fff;
+    // padding: 100px 0;
+    h2 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1.2rem;
+        padding: 20px 0;
+        text-align: center;
+        color: #808080 !important;
+        margin: auto;
+        width: 60%;
+        padding-bottom: 80px;
+    }
+    .card-group {
+        .row {
+            .card {
+                text-align: center;
+                border: none;
+                img {
+                    border-radius: 50%;
+                    width: 140px;
+                }
+                h3 {
+                    font-size: 1.7rem;
+                    font-weight: 500;
+                }
+                span {
+                    color: #09c;
+                    font-weight: 400;
+                    font-size: 1.4rem;
+                }
+                p {
+                    color: rgb(204, 193, 193) !important;
+                    // color: rgb(89, 5, 110);
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+
+/* --------------------------------------   Jerome-Jensen section style  ( person after teacher )     ------------------------------------------- */
+
+#Jerome-Jensen {
+    // height: 80vh;
+    background-image: url("../images/img_4.webp");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 100%;
+        padding: 50px 0;
+        .item {
+            //    width: 50%;
+            margin: auto;
+            color: #fff;
+            text-align: center;
+            img {
+                border-radius: 50%;
+                height: 200px;
+                margin: auto;
+                text-align: center;
+            }
+            h3 {
+                padding: 20px 0;
+            }
+            p {
+                font-style: italic;
+                font-size: 1.4rem;
+                line-height: 35px;
+            }
+        }
+    }
+}
+
+
+/* --------------------------------------   Contact-Us section style      ------------------------------------------- */
+
+#contactus {
+    background-color: rgb(248, 244, 244);
+    padding: 70px 0;
+    color: #000;
+    h2 {
+        margin: auto;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    p {
+        margin: auto;
+        padding: 20px 0;
+        font-size: 1.1rem;
+        color: rgb(124, 120, 120);
+    }
+    form {
+        margin: auto;
+        textarea {
+            width: 100%;
+            height: 250px;
+        }
+        button {
+            font-weight: 700;
+            padding: 10px 50px;
+            border-radius: 25px;
+        }
+        input {
+            border-radius: 10px;
+            height: 50px;
+        }
+        textarea {
+            border-radius: 10px;
+        }
+    }
+}
+
+
+/* --------------------------------------   ABOUT section style      ------------------------------------------- */
+
+#about {
+    .container {
+        color: #000;
+        padding: 100px 0;
+        .row {
+            justify-content: space-around;
+            margin: auto;
+            h6 {
+                padding: 15px 0;
+                font-weight: 700;
+                font-size: 1.1rem;
+            }
+            p {
+                color: #aaa;
+            }
+            a {
+                font-weight: 500;
+                transition: 0.7s all ease;
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+
+/* --------------------------------------    copy-right section style     ------------------------------------------- */
+
+.copy-right {
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+    color: #aaa;
+    a {
+        transition: 0.7s all ease;
+        font-weight: 500;
+        color: #09c;
+        text-decoration: none;
+        &:hover {
+            color: red;
+        }
+    }
+}
+
+.material-icons {
+    font-size: 4rem;
+    color: red;
+    font-weight: 800;
+}

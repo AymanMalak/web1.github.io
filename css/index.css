@@ -1,0 +1,458 @@
+/* --------------------------------------    Global style     ------------------------------------------- */
+body {
+  background-color: #aaa;
+}
+
+.line {
+  background-color: #aaa;
+  height: 1px;
+}
+
+#button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.hide {
+  display: none;
+}
+
+.fontbold {
+  font-weight: bold;
+}
+
+.fontnormal {
+  font-weight: normal;
+  -webkit-transition: all ease 2s;
+  transition: all ease 2s;
+}
+
+/* --------------------------------------    Custom style     ------------------------------------------- */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* --------------------------------------    Navbar style     ------------------------------------------- */
+#navigation {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: rgba(219, 209, 209, 0.644);
+  padding: 20px 0;
+  margin: 0;
+}
+
+#navigation li {
+  list-style-type: none;
+  padding: 0;
+}
+
+#navigation li a {
+  color: rgba(0, 0, 0, 0.822);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* --------------------------------------    Home style ( Header )     ------------------------------------------- */
+#home {
+  background-image: url("../images/hero_1.jpg");
+  background-size: 100% 100%;
+}
+
+#home .overlay {
+  background-color: rgba(39, 39, 48, 0.658);
+  height: 100%;
+  color: #fff;
+}
+
+#home .overlay .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#home .overlay .row .item > button {
+  border-radius: 25px;
+  padding: 15px 30px;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+#home .overlay .row h2 {
+  font-size: 3rem;
+}
+
+#home .overlay .row .item > p {
+  color: #aaa;
+  padding: 15px 0;
+  font-size: 1.1rem;
+}
+
+#home .overlay .row .form {
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 55px 40px;
+}
+
+#home .overlay .row .form p {
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#home .overlay .row .form input {
+  padding: 25px 10px !important;
+}
+
+#home .overlay .row .form button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+
+/* --------------------------------------    Courses section style     ------------------------------------------- */
+#courses {
+  background-color: #f8efef;
+}
+
+#courses h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 25px 0;
+}
+
+#courses .owl-carousel span {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+#courses .owl-carousel div.owl-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+#courses .owl-carousel .prev,
+#courses .owl-carousel .next {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #7971ea;
+  margin: 20px;
+  padding: 0 10px !important;
+  line-height: 1.9 !important;
+  border: #aaa 1px dotted;
+}
+
+#courses .owl-carousel .card {
+  position: relative;
+  -webkit-transition: 0.6s all ease;
+  transition: 0.6s all ease;
+}
+
+#courses .owl-carousel .card:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 5px 5px 10px 5px #aaa !important;
+          box-shadow: 5px 5px 10px 5px #aaa !important;
+}
+
+#courses .owl-carousel .card .card-body {
+  padding: 45px 15px !important;
+}
+
+#courses .owl-carousel .card img {
+  width: 100% !important;
+  height: 200px;
+}
+
+#courses .owl-carousel .card h6 {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+#courses .owl-carousel .card h5 {
+  color: #09c;
+  font-weight: 400;
+}
+
+#courses .owl-carousel .card p {
+  color: #b39090;
+}
+
+#courses .owl-carousel .card span {
+  z-index: 20;
+  position: absolute;
+  top: 170px;
+  right: 0;
+  padding: 10px;
+  font-weight: 400;
+  background-color: #7971ea;
+  color: #fff;
+}
+
+/* --------------------------------------   Program section style      ------------------------------------------- */
+#programs {
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+#programs h2 {
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #000;
+}
+
+#programs p {
+  margin: auto;
+  text-align: center;
+  width: 58%;
+  color: #808080 !important;
+  font-size: 1.08rem;
+}
+
+#programs .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: initial;
+}
+
+#programs .row .right-content h5 {
+  width: 90%;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #000;
+}
+
+#programs .row .right-content p {
+  font-size: 1.1rem;
+  padding: 15px 0;
+  width: 100%;
+  line-height: 35px;
+  text-align: initial;
+  color: #808080 !important;
+}
+
+#programs .row .right-content span {
+  color: #09c;
+  font-size: 1.1rem;
+  display: block;
+  padding: 5px 0;
+}
+
+#programs .row .right-content span i {
+  color: #7971ea;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+
+/* --------------------------------------    Teachers section style     ------------------------------------------- */
+#teachers {
+  background-color: #fff;
+}
+
+#teachers h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+#teachers p {
+  font-size: 1.2rem;
+  padding: 20px 0;
+  text-align: center;
+  color: #808080 !important;
+  margin: auto;
+  width: 60%;
+  padding-bottom: 80px;
+}
+
+#teachers .card-group .row .card {
+  text-align: center;
+  border: none;
+}
+
+#teachers .card-group .row .card img {
+  border-radius: 50%;
+  width: 140px;
+}
+
+#teachers .card-group .row .card h3 {
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+#teachers .card-group .row .card span {
+  color: #09c;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+#teachers .card-group .row .card p {
+  color: #ccc1c1 !important;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* --------------------------------------   Jerome-Jensen section style  ( person after teacher )     ------------------------------------------- */
+#Jerome-Jensen {
+  background-image: url("../images/img_4.webp");
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+#Jerome-Jensen .overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  padding: 50px 0;
+}
+
+#Jerome-Jensen .overlay .item {
+  margin: auto;
+  color: #fff;
+  text-align: center;
+}
+
+#Jerome-Jensen .overlay .item img {
+  border-radius: 50%;
+  height: 200px;
+  margin: auto;
+  text-align: center;
+}
+
+#Jerome-Jensen .overlay .item h3 {
+  padding: 20px 0;
+}
+
+#Jerome-Jensen .overlay .item p {
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 35px;
+}
+
+/* --------------------------------------   Contact-Us section style      ------------------------------------------- */
+#contactus {
+  background-color: #f8f4f4;
+  padding: 70px 0;
+  color: #000;
+}
+
+#contactus h2 {
+  margin: auto;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+#contactus p {
+  margin: auto;
+  padding: 20px 0;
+  font-size: 1.1rem;
+  color: #7c7878;
+}
+
+#contactus form {
+  margin: auto;
+}
+
+#contactus form textarea {
+  width: 100%;
+  height: 250px;
+}
+
+#contactus form button {
+  font-weight: 700;
+  padding: 10px 50px;
+  border-radius: 25px;
+}
+
+#contactus form input {
+  border-radius: 10px;
+  height: 50px;
+}
+
+#contactus form textarea {
+  border-radius: 10px;
+}
+
+/* --------------------------------------   ABOUT section style      ------------------------------------------- */
+#about .container {
+  color: #000;
+  padding: 100px 0;
+}
+
+#about .container .row {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+}
+
+#about .container .row h6 {
+  padding: 15px 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+#about .container .row p {
+  color: #aaa;
+}
+
+#about .container .row a {
+  font-weight: 500;
+  -webkit-transition: 0.7s all ease;
+  transition: 0.7s all ease;
+}
+
+#about .container .row a:hover {
+  color: red;
+}
+
+/* --------------------------------------    copy-right section style     ------------------------------------------- */
+.copy-right {
+  margin: auto;
+  text-align: center;
+  padding: 50px 0;
+  color: #aaa;
+}
+
+.copy-right a {
+  -webkit-transition: 0.7s all ease;
+  transition: 0.7s all ease;
+  font-weight: 500;
+  color: #09c;
+  text-decoration: none;
+}
+
+.copy-right a:hover {
+  color: red;
+}
+
+.material-icons {
+  font-size: 4rem;
+  color: red;
+  font-weight: 800;
+}
+/*# sourceMappingURL=index.css.map */
